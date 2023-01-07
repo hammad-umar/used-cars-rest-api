@@ -1,0 +1,25 @@
+### Sign up as a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password": "123456"
+}
+
+### Sign in as an existing user
+POST http://localhost:3000/auth/signin 
+Content-Type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password": "123456"
+}
+
+### Get the currently logged in user 
+GET http://localhost:3000/auth/me 
+
+### Logout the user
+GET http://localhost:3000/auth/logout 
+
+

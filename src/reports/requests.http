@@ -1,0 +1,23 @@
+### Create a new report 
+POST http://localhost:3000/reports 
+Content-Type: application/json
+
+{
+    "make": "Lamborghini",
+    "model": "Aventadore",
+    "year": 2018,
+    "mileage": 55000,
+    "lat": 0,
+    "lng": 0,
+    "price": 150000
+}
+
+### Change report approval status
+PATCH http://localhost:3000/reports/6
+Content-Type: application/json
+
+{
+    "approved": true 
+}
+
+### Get an estimated price report 
